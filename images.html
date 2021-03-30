@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9QPQVC');</script>
+<!-- End Google Tag Manager -->
+<style>
+.selectable .ui-selecting {
+  border: 2px dashed #ff0000;
+}
+
+.selectable .ui-selected {
+  border: 2px solid #ff0000;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+  box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+}
+
+.selectable img {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ffffff;
+}
+
+.selected-items {
+  border: 2px solid #ff0000;
+  line-height: 32px;
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9QPQVC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ <h1>Select Image</h1>
+<div class="selectable"">
+  <img name="1" src="1.jpeg" class="ui-widget-content" onclick="selectImage(this)"/>
+  <img name="2" src="2.jpeg" class="ui-widget-content" onclick="selectImage(this)"/>
+  <img name="3" src="3.jpeg" class="ui-widget-content" onclick="selectImage(this)"/>
+</div>
+
+</html>
+</body>
+<script type="text/JavaScript">
+function selectImage(selectedElem){
+   window.location.href = "thankyoupage.html?path="+selectedElem.src;
+}
+
+</script>

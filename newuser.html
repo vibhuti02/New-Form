@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html lang="en"><head>  
+<meta charset="utf-8">  
+<title>Please enter your details : </title>  
+<script src="validation.js"></script>  
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9QPQVC');</script>
+<!-- End Google Tag Manager --> 
+</head>
+<body onload="resetForm();">  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9QPQVC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<h1>Registration Form</h1>  
+<form name='registration' onSubmit="return formValidation();" onload="resetForm()">  
+<ul>  
+Name:<input type="text" name="userid" maxlength="12"/></br></br>
+Email:<input type="text" name="email" maxlength="50" /></br></br>
+Mobile:<input type="tel" name="mobile" maxlength="10" /></br></br>
+DOB: <input type="date" id="dob" name="dob"/></br></br>
+Gender:<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></label></br></br>
+ <input type="submit" name="submit" value="Submit" />
+</ul>  
+</form>  
+</body>  
+</html>
